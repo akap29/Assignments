@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tech Fest Registration Form (Form Tag)</title>
+</head>
+<body style="background-color: antiquewhite;">
+    <h1 style="width: 300px; margin: 0 auto;">Tech Fest Registration Form</h1>
+
+    <form action="/submit" method="POST" style="width: 300px; margin: 0 auto;">
+   
+      <div>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+   
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+   
+      <div>
+        <label for="college">College Name:</label>
+        <input type="text" id="college" name="college" required>
+      </div>
+
+    
+      <div>
+        <label for="year">Current year of study:</label>
+        <select id="year" name="year">
+          <option value="">--Select--</option>
+          <option value="1">1st</option>
+          <option value="2">2nd</option>
+          <option value="3">3rd</option>
+          <option value="4">4th</option>
+        </select>
+      </div>
+
+    
+      <div>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+      </div>
+
+    
+      <div>
+        <label>Choose Events:</label><br>
+        <input type="checkbox" id="coding" name="events" value="Coding">
+        <label for="coding">Coding Challenge</label><br>
+
+        <input type="checkbox" id="quiz" name="events" value="Tech Quiz">
+        <label for="quiz">Tech Quiz</label><br>
+
+        <input type="checkbox" id="robo" name="events" value="Robotics">
+        <label for="robo">Robotics</label><br>
+
+        <input type="checkbox" id="uiux" name="events" value="UI/UX">
+        <label for="uiux">UI/UX Design</label>
+      </div>
+
+    
+      <div>
+        <label for="comments">Any Suggestions or Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Write here..."></textarea>
+      </div>
+
+    
+      <div>
+        <button type="submit" style="background-color: burlywood;">Register</button>
+      </div>
+    </form>
+</body>
+</html>
