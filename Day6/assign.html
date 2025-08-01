@@ -1,0 +1,18 @@
+<body>
+    <script>
+        let a=prompt("Enter your Age");
+        if(a>=0 && a<=100){
+            let grd=(a>=90?"A":(a>=75)?"B":(a>=60)?"C":(a>=40)?"D":"F");
+            let msg=(grd=="A"?"Excellent!":(grd=="B")?"Great Job!":(grd=="C")?"Good":(grd=="D")?"You Passed":"Better Luck Next Time");
+            console.log("Grade");
+            console.log(grd);
+            console.log("Message");
+            console.log(msg);
+            
+        }
+        else{
+            console.log("You Entered Incorrect Data");
+            
+        }
+    </script>
+</body>
